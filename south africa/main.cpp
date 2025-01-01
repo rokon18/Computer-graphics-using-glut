@@ -1,6 +1,7 @@
 #include <windows.h>
 #include <GL/gl.h>
 #include <GL/glut.h>
+#include <math.h>
 
 void display() {
 	//glClearColor(0.0f, 0.0f, 0.0f, 1.0f); // Set background color to black
@@ -65,8 +66,17 @@ void display() {
     glVertex2f(170,0);//problem here y axis -40 but x 70
     glEnd();
 
+    glBegin(GL_POINTS);
+ for(int i=0;i<1000;++i)
+  {
+  glVertex3f(cos(2*3.14159*i/1000.0),sin(2*3.14159*i/1000.0),0);
+  }
+ glEnd();
 
-	glFlush();  // Render now
+
+
+	glFlush();
+	 // Render now
 }
 
 void myInit (void){

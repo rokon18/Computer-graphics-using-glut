@@ -872,3 +872,6 @@
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\gl\glu.h
 	<GL/gl.h>
 
+1731593282 source:f:\fall 24-25 8th semester\mid\computer graphics [l]\hw\basic house\main.cpp
+	<GL/glut.h>
+
